@@ -1,0 +1,10 @@
+Espresso 50
+Latte 75
+Mocha 80
+Cappucino 85
+Glace 85
+Americano 60
+Irish 75
+Milk 50
+Frappe 90
+Water 10
