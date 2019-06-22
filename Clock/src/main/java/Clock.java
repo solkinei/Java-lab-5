@@ -11,6 +11,7 @@ import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.net.URL;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -20,7 +21,8 @@ public class Clock extends Application {
     @Override
     public void start(Stage stage) {
 
-        Image image = new Image("file:face.jpg", 600, 600, false, false);
+        URL url=getClass().getResource("face.jpg");
+        Image image = new Image(url.toString(), 600, 600, false, false);
         ImageView imageView = new ImageView(image);
 
         Line hourHand = new Line(0, 0, 0, -150);

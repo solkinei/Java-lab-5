@@ -1,12 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Clock">
-    <output-path>$PROJECT_DIR$/out/artifacts/Clock</output-path>
-    <root id="archive" name="Clock.jar">
+  <artifact type="jar" name="Clock_new">
+    <output-path>$PROJECT_DIR$/out/artifacts/Clock_new</output-path>
+    <root id="archive" name="Clock_new.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="Clock" />
-      <element id="file-copy" path="$PROJECT_DIR$/resources/face.jpg" />
     </root>
   </artifact>
 </component>
