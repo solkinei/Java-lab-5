@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" prefHeight="558.0" prefWidth="615.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="pnBase" prefHeight="558.0" prefWidth="615.0" style="-fx-background-color: grey;">
+         <children>
+            <ImageView fitHeight="558.0" fitWidth="615.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/white.jpg"/>
+               </image>
+            </ImageView>
+
+            <VBox prefHeight="558.0" prefWidth="233.0">
+               <children>
+                  <TextArea id="taMessage" fx:id="taMessage" editable="false" prefHeight="100.0" prefWidth="198.0" promptText="Включи меня" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="25.0" right="10.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="lblGive" opacity="0.34" text="Внесите деньги:" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="25.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="25.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="taCoin" editable="false" layoutX="35.0" layoutY="20.0" prefHeight="65.0" prefWidth="198.0" promptText="Сумма">
+                     <VBox.margin>
+                        <Insets left="25.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button id="btnTake" fx:id="btnTake" contentDisplay="CENTER" layoutX="35.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnTakeClick" opacity="0.0" prefHeight="48.0" prefWidth="200.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" text="Забрать" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="28.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="btnPay" fx:id="btnPay" contentDisplay="CENTER" layoutX="35.0" layoutY="371.0" mnemonicParsing="false" onAction="#btnPayClick" opacity="0.34" prefHeight="48.0" prefWidth="200.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" text="Внести деньги" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="btnCancel" fx:id="btnCancel" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnCancelClick" opacity="0.34" prefHeight="48.0" prefWidth="200.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" text="Отмена" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToggleButton id="btnOn" fx:id="btnOnOff" contentDisplay="CENTER" layoutX="35.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnOnOffClick" prefHeight="48.0" prefWidth="200.0" style="-fx-border-color: white; -fx-background-color: red; -fx-border-width: 2; -fx-border-radius: 3;" text="On/Off" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+               </children>
+            </VBox>
+            <VBox layoutX="292.0" prefHeight="558.0" prefWidth="323.0">
+               <children>
+                  <Label fx:id="lblChoice" opacity="0.34" text="Выберите напиток:" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button id="btnOne" fx:id="btnOne" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnOneClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Label id="lblOne" fx:id="lblOne" text="0" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="65.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button id="btnTwo" fx:id="btnTwo" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnTwoClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label id="lblTwo" fx:id="lblTwo" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="111.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button id="btnThree" fx:id="btnThree" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnThreeClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label id="lblMera" fx:id="lblThree" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="164.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button id="btnFour" fx:id="btnFour" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnFourClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label id="lblFour" fx:id="lblFour" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="217.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button fx:id="btnFive" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnFiveClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="lblFive" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="270.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button fx:id="btnSix" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSixClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="lblSix" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="323.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button fx:id="btnSeven" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSevenClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="lblSeven" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="376.0" prefHeight="46.0" prefWidth="365.0">
+                     <children>
+                        <Button fx:id="btnEight" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnEightClick" prefHeight="43.0" prefWidth="215.0" style="-fx-border-color: white; -fx-background-color: inherit; -fx-border-width: 2; -fx-border-radius: 3;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label fx:id="lblEight" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
