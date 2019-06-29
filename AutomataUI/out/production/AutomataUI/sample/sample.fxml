@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ProgressBar?>
+
+<?import javafx.scene.shape.Rectangle?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <HBox alignment="CENTER">
+        <VBox>
+            <Button fx:id="onOffButton" text="вкл/выкл" prefWidth="200"/>
+            <Rectangle fx:id="indicator" width="200" height="10" fill="aquamarine"/>
+        </VBox>
+        <Button fx:id="cancelButton" text="отмена" prefWidth="200"/>
+    </HBox>
+    <Label fx:id="screen" text="экран"/>
+    <HBox alignment="CENTER">
+        <Button fx:id="oneCoinButton" text="+1"/>
+        <Button fx:id="fiveCoinButton" text="+5"/>
+        <Button fx:id="tenCoinButton" text="+10"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="coffee1" text="1"/>
+        <Button fx:id="coffee2" text="2"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="coffee3" text="3"/>
+        <Button fx:id="coffee4" text="4"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="coffee5" text="5"/>
+        <Button fx:id="coffee6" text="6"/>
+    </HBox>
+</VBox>
