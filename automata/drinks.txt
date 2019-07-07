@@ -1,0 +1,8 @@
+1. coffee with milk:30
+2. latte:35
+3. hot chocolate:35
+4. americana:25
+5. black russian:120
+6. whiskey&cola:150
+7. tea:25
+8. irish coffee:80
