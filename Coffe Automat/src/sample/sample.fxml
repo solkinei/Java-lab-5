@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="392.0" prefWidth="360.0" style="-fx-background-color: #353734;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="382.0" prefWidth="281.0" style="-fx-background-color: #620E0E;" GridPane.columnIndex="1">
+         <children>
+            <ComboBox fx:id="comboBox" layoutX="23.0" layoutY="14.0" prefHeight="15.0" prefWidth="216.0" />
+            <TextField fx:id="textField" layoutX="23.0" layoutY="270.0" onAction="#setCash" prefHeight="32.0" prefWidth="216.0" promptText="Enter money" />
+            <Button layoutX="23.0" layoutY="340.0" mnemonicParsing="false" onAction="#off" text="OFF" />
+            <ImageView fitHeight="118.0" fitWidth="144.0" layoutX="72.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cof.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="308.0" mnemonicParsing="false" onAction="#on" text="ON" />
+            <Label fx:id="state" layoutX="69.0" layoutY="176.0" prefHeight="38.0" prefWidth="131.0" text="OFF" textFill="#bfadad" />
+            <Label fx:id="money" layoutX="64.0" layoutY="238.0" prefHeight="32.0" prefWidth="201.0" textFill="WHITE" />
+            <Button layoutX="98.0" layoutY="308.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL" />
+            <Label fx:id="price" layoutX="69.0" layoutY="206.0" prefHeight="32.0" prefWidth="90.0" textFill="WHITE" />
+            <Button layoutX="177.0" layoutY="308.0" mnemonicParsing="false" onAction="#cook" text="COOK" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
