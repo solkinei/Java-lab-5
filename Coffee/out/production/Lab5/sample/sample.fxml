@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" onDragDetected="#initialize" prefHeight="413.0" prefWidth="337.0" style="-fx-background-color: #d4cdcd;" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="399.0" prefWidth="325.0" style="-fx-background-color: #d4cdcd;" GridPane.rowIndex="1">
+         <children>
+            <Button layoutX="84.0" layoutY="285.0" mnemonicParsing="false" onAction="#off" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: #968181;" text="OFF" textFill="#b51c1c" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="84.0" layoutY="237.0" mnemonicParsing="false" onAction="#on" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: #968181;" text="ON" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="177.0" layoutY="237.0" mnemonicParsing="false" onAction="#cook" style="-fx-background-color: #968181;" text="COOK" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="labelState" layoutX="84.0" layoutY="62.0" prefHeight="33.0" prefWidth="110.0" text="State" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lableCash" layoutX="84.0" layoutY="95.0" prefHeight="25.0" prefWidth="185.0" text="Cash" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="textCoin" layoutX="79.0" layoutY="176.0" onAction="#takeMoney" style="-fx-background-color: #968181;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Label fx:id="labelPrice" layoutX="84.0" layoutY="128.0" prefHeight="25.0" prefWidth="185.0" text="Price" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button layoutX="171.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #968181;" text="CANCEL" textFill="#b51c1c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ComboBox fx:id="comboBoxMenu" layoutX="64.0" layoutY="29.0" onAction="#drinkSelection" prefHeight="33.0" prefWidth="193.0" style="-fx-background-color: #968181;" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
