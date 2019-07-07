@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: 99FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView disable="true" fitHeight="600.0" fitWidth="600.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="572.0" prefWidth="333.0">
+         <children>
+            <Button fx:id="btnOnOff" mnemonicParsing="false" onAction="#onOff" prefHeight="48.0" prefWidth="102.0" text="ON/OFF" textAlignment="CENTER" />
+            <HBox prefHeight="55.0" prefWidth="333.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="107.0" text="Drink name" />
+                  <Label prefHeight="58.0" prefWidth="99.0" text="Price $" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelEspresso" prefHeight="110.0" prefWidth="106.0" />
+                  <Label fx:id="labelEspressoPrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnEspresso" mnemonicParsing="false" onAction="#buyEspresso" prefHeight="47.0" prefWidth="128.0" text="BUY" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelAmericano" prefHeight="110.0" prefWidth="106.0" />
+                  <Label fx:id="labelAmericanoPrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnAmericano" mnemonicParsing="false" onAction="#buyAmericano" prefHeight="47.0" prefWidth="128.0" text="BUY" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelLatte" prefHeight="110.0" prefWidth="106.0" />
+                  <Label fx:id="labelLattePrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnLatte" mnemonicParsing="false" onAction="#buyLatte" prefHeight="47.0" prefWidth="128.0" text="BUY" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelMocco" prefHeight="110.0" prefWidth="106.0" />
+                  <Label fx:id="labeMoccoPrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnMocco" mnemonicParsing="false" onAction="#buyMocco" prefHeight="47.0" prefWidth="128.0" text="BUY" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelChocolate" prefHeight="110.0" prefWidth="106.0" />
+                  <Label fx:id="labelChocolatePrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnChocolate" mnemonicParsing="false" onAction="#buyChocolate" prefHeight="47.0" prefWidth="128.0" text="BUY" />
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="333.0">
+               <children>
+                  <Label fx:id="labelKotletkispureshkoy" prefHeight="110.0" prefWidth="106.0" wrapText="true" />
+                  <Label fx:id="labelKotletkispureshkoyPrice" prefHeight="56.0" prefWidth="100.0" />
+                  <Button fx:id="btnKotletkispureshkoy" mnemonicParsing="false" onAction="#buyKotletki" prefHeight="47.0" prefWidth="128.0" text="BUY ME!" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#getChange" prefHeight="51.0" prefWidth="333.0" text="RETURN CHANGE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="358.0" layoutY="14.0" prefHeight="572.0" prefWidth="227.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="169.0">
+               <children>
+                  <Label prefHeight="106.0" prefWidth="118.0" text="STATE" />
+                  <Label fx:id="showState" prefHeight="101.0" prefWidth="146.0" text="OFF" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="238.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="104.0" text="Balance $ " />
+                  <Label fx:id="labelShowBalance" prefHeight="44.0" prefWidth="136.0" />
+               </children>
+            </HBox>
+            <Label fx:id="labelShowMessage" prefHeight="49.0" prefWidth="240.0" />
+            <TextField fx:id="TFinsertCash" prefHeight="43.0" prefWidth="238.0" />
+            <Button fx:id="BtnInsertCash" mnemonicParsing="false" onAction="#insertCash" prefHeight="55.0" prefWidth="227.0" text="INSERT CASH">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

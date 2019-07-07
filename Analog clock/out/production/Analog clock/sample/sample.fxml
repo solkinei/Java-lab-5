@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="736.0" prefWidth="736.0">
+         <children>
+            <ImageView fitHeight="736.0" fitWidth="736.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@clock.jpg" />
+               </image>
+            </ImageView>
+            <Line fx:id="minuteHand" endX="-120.0" endY="-260.0" layoutX="488.0" layoutY="368.0" startX="-120.0" stroke="#1b5417" strokeLineJoin="ROUND" strokeWidth="8.0" />
+            <Line fx:id="hourHand" endX="-120.0" endY="-160.0" layoutX="488.0" layoutY="368.0" startX="-120.0" strokeLineJoin="ROUND" strokeWidth="12.0" />
+            <Line fx:id="secondHand" endX="-120.0" endY="-300.0" layoutX="488.0" layoutY="368.0" startX="-120.0" stroke="RED" strokeLineJoin="ROUND" strokeWidth="3.0" />
+         </children></Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
